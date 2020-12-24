@@ -17,7 +17,22 @@ list({"a":3, "b":9, "c":72}.items())
 os.listdir(".")
 
 建立值為空的字典  
-adict = dict.fromkeys(["name","age","sex"])
+adict = dict.fromkeys(["name","age","sex"])  
+設定預設值
+adict.setdefault("adress","NotHere")
 
+string.ascii_letters  a-Z  
+string.digits  0-9  
+string.punctuation  !"#$%&\'()*+,  
+
+列印區域、全域變數
+print("locals",locals())
+print("globals",globals())
+
+建立一個有序的字典
+import collections
+x = collections.OrderedDict()
+x["a"] = 3, x["b"] = 4, x["c"] = 5  
+x >>> OrderedDict([("a",3),("b",4),("c",5)])
 
 
