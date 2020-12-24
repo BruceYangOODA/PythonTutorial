@@ -16,7 +16,8 @@ list({"a":3, "b":9, "c":72}.items())
 
 os.listdir(".")
 
-
+建立值為空的字典  
+adict = dict.fromkeys(["name","age","sex"])
 
 
 
