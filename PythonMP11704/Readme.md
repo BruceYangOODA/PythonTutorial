@@ -35,4 +35,16 @@ x = collections.OrderedDict()
 x["a"] = 3, x["b"] = 4, x["c"] = 5  
 x >>> OrderedDict([("a",3),("b",4),("c",5)])
 
+import datetime  
+Today = datetime.date.today()  
+>>>Today  
+datatime.date(2015,12,6)  
+now = datetime.datetime.now()  
+>>>now  
+datetime.datetime(2015,12,6,16,1,30,313898)  
+
+
+
+
+
 
