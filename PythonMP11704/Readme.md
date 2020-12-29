@@ -46,22 +46,20 @@ datetime.datetime(2015,12,6,16,1,30,313898)
 __new__在__init__之前執行  
 total =  0  
 def _ _ new _ _ (cls, *args, **kwargs):  
-  if cls.total >= 3:  
-    raise Exception("MAX 3")  
-  else:  
-    return object. _ _ new _ _ (cls)  
-        
+&emsp;if cls.total >= 3:  
+&emsp;&emsp;raise Exception("MAX 3")  
+&emsp;else:  
+&emsp;&emsp;return object. _ _ new _ _ (cls)          
 def _ _ init _ _ (self):  
-  className.total = className.total + 1  
+&emsp;className.total = className.total + 1  
   
 可讀、可寫、可刪除的屬性  
-&emsp;def get(self):  
-return self.__value  
-&ensp;def set(self, v):  
-self.__value = v  
-&nbsp;def del(self):  
-del self.__value
-  
+def get(self):  
+&emsp;return self.__value  
+def set(self, v):  
+&emsp;self.__value = v  
+def del(self):  
+&emsp;del self.__value  
 value = property(__get,__set,__del)
 
 
