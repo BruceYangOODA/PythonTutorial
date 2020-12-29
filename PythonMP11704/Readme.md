@@ -48,7 +48,7 @@ total =  0
 def _ _ new _ _ (cls, *args, **kwargs):  
   if cls.total >= 3:  
     raise Exception("MAX 3")  
-  eles:  
+  else:  
     return object. _ _ new _ _ (cls)  
         
 def _ _ init _ _ (self):  
