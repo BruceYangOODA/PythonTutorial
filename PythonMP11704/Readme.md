@@ -59,7 +59,7 @@ def get(self):
 return self.__value  
 def set(self, v):  
 self.__value = v  
-<p>def del(self):  
+&nbsp;def del(self):  
 del self.__value
   
 value = property(__get,__set,__del)
