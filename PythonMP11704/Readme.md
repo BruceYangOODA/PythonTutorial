@@ -45,13 +45,13 @@ datetime.datetime(2015,12,6,16,1,30,313898)
 
 __new__在__init__之前執行  
 total =  0  
-def __new__(cls, *args, **kwargs):  
+def _ _new_ _(cls, *args, **kwargs):  
   if cls.total >= 3:  
     raise Exception("MAX 3")  
   eles:  
-    return object.__new__(cls)  
+    return object._ _new_ _(cls)  
         
-def __init__(self):  
+def _ _init_ _(self):  
   className.total = className.total + 1  
   
   
