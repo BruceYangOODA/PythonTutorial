@@ -55,9 +55,9 @@ def _ _ init _ _ (self):
   className.total = className.total + 1  
   
 可讀、可寫、可刪除的屬性  
-def get(self):  
+&emsp;def get(self):  
 return self.__value  
-def set(self, v):  
+&ensp;def set(self, v):  
 self.__value = v  
 &nbsp;def del(self):  
 del self.__value
