@@ -56,11 +56,11 @@ def _ _ init _ _ (self):
   
 可讀、可寫、可刪除的屬性  
 def get(self):  
- return self.__value  
+return self.__value  
 def set(self, v):  
- self.__value = v  
-def del(self):  
- del self.__value
+self.__value = v  
+<>def del(self):  
+del self.__value
   
 value = property(__get,__set,__del)
 
