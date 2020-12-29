@@ -37,12 +37,22 @@ x >>> OrderedDict([("a",3),("b",4),("c",5)])
 
 import datetime  
 Today = datetime.date.today()  
->>>Today  
+>>Today  
 datatime.date(2015,12,6)  
 now = datetime.datetime.now()  
->>>now  
+>>now  
 datetime.datetime(2015,12,6,16,1,30,313898)  
 
+__new__在__init__之前執行  
+total =  0  
+def __new__(cls, *args, **kwargs):
+  if cls.total >= 3:
+    raise Exception("MAX 3")
+  eles:
+    return object.__new__(cls)
+        
+def __init__(self):
+  className.
 
 
 
