@@ -18,7 +18,7 @@ os.listdir(".")
 
 建立值為空的字典  
 adict = dict.fromkeys(["name","age","sex"])  
-設定預設值
+設定預設值  
 adict.setdefault("adress","NotHere")
 
 string.ascii_letters  a-Z  
