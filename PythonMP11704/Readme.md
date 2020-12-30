@@ -2,6 +2,10 @@
 
 PythonMP11704  [Python也可以這樣學](http://www.drmaster.com.tw/Bookinfo.asp?BookID=MP11704)
 
+第五章 字串與規則運算式  
+
+
+
 import this  
 
 package list  
@@ -62,7 +66,11 @@ def del(self):
 &emsp;del self.__value  
 value = property(__get,__set,__del)
 
-
+### 第五章 字串與規則運算式
+> type("測試")  
+<class "str">  
+> type("測試".encode("unt-8"))  
+<class "bytes">
 
 
 
