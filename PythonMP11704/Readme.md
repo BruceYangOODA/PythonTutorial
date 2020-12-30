@@ -57,11 +57,11 @@ def _ _ init _ _ (self):
 &emsp;ClassName.total = ClassName.total + 1  
   
 可讀、可寫、可刪除的屬性  
-def get(self):  
+def __get(self):  
 &emsp;return self.__value  
-def set(self, v):  
+def __set(self, v):  
 &emsp;self.__value = v  
-def del(self):  
+def __del(self):  
 &emsp;del self.__value  
 value = property(__get,__set,__del)
 
