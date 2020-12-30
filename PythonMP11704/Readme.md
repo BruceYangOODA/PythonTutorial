@@ -69,7 +69,7 @@ value = property(__get,__set,__del)
 print(ord("測"))  
 print(ord("試"))  
 28204 # 測 utf8編碼數字  
-35430 # 試 utf8編碼數字
+35430 # 試 utf8編碼數字  
 chr(28204) # "測"  
 
 <<< type("測試")  
