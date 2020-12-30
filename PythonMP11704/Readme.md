@@ -70,6 +70,7 @@ print(ord("測"))
 print(ord("試"))  
 28204 # 測 utf8編碼數字  
 35430 # 試 utf8編碼數字
+chr(28204) # "測"  
 
 <<< type("測試")  
 <class "str">  
@@ -142,3 +143,86 @@ re.findall()
 re.sub()  以repl替換  
 
 ### 06_檔案與資料夾操作
+os.listdir(path) # 返回資料夾,檔案 列表  
+os.path.isdir(path) # 是否為資料夾  
+os.walk(path) # 返回 root, 資料夾列表, 檔案列表  
+
+CSV讀寫套件  
+csv.writer(file, delimiter, quotechar)  
+csv.reader(file, delimiter, quotechar)  
+csv.DictWriter(file, fieldnames)  
+csv.DictReader(file)  
+
+Pickle讀寫二元資料  
+pickle.dump(data, file) # 把data寫入檔案  
+pickle.load(file) # 從檔案讀出資料  
+
+p = pickle.dumps(data) # 把資料編成pickle形式  
+load_data = pickle.loads(p) # 把pickle形式資料轉譯成物件  
+
+檔案與資料夾操作  
+OS模組  
+chdir(path)  # 把path設為工作目錄  
+get_exec_path() # 返回執行檔的搜尋路徑(環境變數)  
+getcwd() # 返回目前工作目錄  
+listdir(path) # 返回path目錄下的檔案和目錄清單  
+mkdir(path) # 建立目錄 
+mkdirs(path/path1/path2) # 建立多層目錄  
+rmdir(path) # 刪除目錄  
+remove(path) # 刪除檔案  
+rename(src, dst) # 重新命名檔案或目錄  
+startfile(filepath) # 執行檔案  
+stat(path # 返回檔案的所有屬性  
+walk(path) # 尋訪目錄樹  
+
+PATH模組  
+abspath(path)  
+basename(path) # 資料夾名稱或檔名與檔案格式  
+dirname(path) # path的資料夾名稱  
+exists(path) # 檔案或資料夾是否存在  
+getcime(filename) # 檔案建立時間  
+getatime(filename) # 檔案最後存取時間  
+getmtime(filename) # 檔案最後修改時間  
+getsize(filename) # 檔案的大小  
+isdir(path)  
+isfile(path)  
+join(path, *paths)  
+split(path) # 取得檔案名稱格式 與 前綴path  
+splitext(path) # 取得檔案格式與前綴path  
+splitdrive(path) # 取得磁碟名稱與後續path  
+
+SHUTIL模組  
+copyfile(src, dst)  
+move(src, dst)  
+make_archive(base_name) # 建立tar或zip格式的壓縮檔  
+unpack_archive(filename) # 解壓縮檔案  
+
+EXCEL檔案讀寫  
+97版Excel  
+from xlwt import *  
+book = Workbook()  
+sheet = book.add_sheet("First")  
+row = sheet.row(0)  
+row.write(0,"test")  
+book.save(path)  
+
+import xlrd  
+l_book = xlrd.open_workbook(path) # 開啟Excel檔案  
+l_sheet = l_book.sheet_by_name("First")  
+row = l_sheet.row(0)  
+print(row[0].value)  
+
+Python與Win32連動
+06-18_1.py
+06-18_2.py
+06-18_3.py
+
+from openpyxl import Workbook  
+2003年版Excel  
+wb = Workbook()  
+ws = wb.create_sheet(title="First")  
+wb.save(path)  
+wb = openpyxl.load_workbook(path)	 
+
+將指定資料夾的檔案壓縮至既有壓縮檔  
+06-29.py  
