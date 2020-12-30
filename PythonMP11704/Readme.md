@@ -2,7 +2,9 @@
 
 PythonMP11704  [Python也可以這樣學](http://www.drmaster.com.tw/Bookinfo.asp?BookID=MP11704)
 
-第五章 字串與規則運算式  
+02_Python 序列  
+04_物件導向程式設計  
+05_字串與規則運算式  
 
 
 
@@ -15,15 +17,19 @@ https://pypi.org/
 https://www.lfd.uci.edu/~gohlke/pythonlibs/  
 pip install pygame-1.9.2a0-cp35-none-win_amd64.whl  
 
+### 02_Python 序列
 list({"a":3, "b":9, "c":72}.items())  
 [("b",9), ("c",72), ("a",3)]
-
-os.listdir(".")
 
 建立值為空的字典  
 adict = dict.fromkeys(["name","age","sex"])  
 設定預設值  
 adict.setdefault("adress","NotHere")
+
+print(ord("測"))  
+print(ord("試"))  
+28204 # 測 utf8編碼數字  
+35430 # 試 utf8編碼數字  
 
 string.ascii_letters  a-Z  
 string.digits  0-9  
@@ -39,12 +45,13 @@ x = collections.OrderedDict()
 x["a"] = 3, x["b"] = 4, x["c"] = 5  
 x >>> OrderedDict([("a",3),("b",4),("c",5)])  
 
+### 04_物件導向程式設計
 import datetime  
 Today = datetime.date.today()  
-Today  
+<<< Today  
 datatime.date(2015,12,6)  
 now = datetime.datetime.now()  
-now  
+<<< now  
 datetime.datetime(2015,12,6,16,1,30,313898)  
 
 __new__在__init__之前執行  
@@ -66,11 +73,16 @@ def del(self):
 &emsp;del self.__value  
 value = property(__get,__set,__del)
 
-### 第五章 字串與規則運算式
+### 05_字串與規則運算式
 <<< type("測試")  
 <class "str">  
 <<< type("測試".encode("unt-8"))  
 <class "bytes">
+
+%格式字串方法
+%s # 用str()顯示  
+%r # 用repr()顯示  
+
 
 
 
