@@ -90,7 +90,7 @@ index() rindex() # 不存在拋出異常
 count() # 不存在返回 0  
 
 映射字串內位置相對的字元  
-table = "".maketrans("字串A","字串B")
+table = "".maketrans("字串A","字串B")  
 字串C.trainslate(table) # 字串C內 符合映射表字串A的字元會被字串B取代  
 
 產生隨機密碼  
@@ -212,10 +212,10 @@ l_sheet = l_book.sheet_by_name("First")
 row = l_sheet.row(0)  
 print(row[0].value)  
 
-Python與Win32連動
-06-18_1.py
-06-18_2.py
-06-18_3.py
+Python與Win32連動  
+06-18_1.py  
+06-18_2.py  
+06-18_3.py  
 
 from openpyxl import Workbook  
 2003年版Excel  
