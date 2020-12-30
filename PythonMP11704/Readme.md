@@ -25,15 +25,15 @@ string.ascii_letters  a-Z
 string.digits  0-9  
 string.punctuation  !"#$%&\'()*+,  
 
-列印區域、全域變數
-print("locals",locals())
-print("globals",globals())
+列印區域、全域變數  
+print("locals",locals())  
+print("globals",globals())  
 
-建立一個有序的字典
-import collections
-x = collections.OrderedDict()
+建立一個有序的字典  
+import collections  
+x = collections.OrderedDict()  
 x["a"] = 3, x["b"] = 4, x["c"] = 5  
-x >>> OrderedDict([("a",3),("b",4),("c",5)])
+x >>> OrderedDict([("a",3),("b",4),("c",5)])  
 
 import datetime  
 Today = datetime.date.today()  
@@ -51,7 +51,7 @@ def _ _ new _ _ (cls, *args, **kwargs):
 &emsp;else:  
 &emsp;&emsp;return object. _ _ new _ _ (cls)          
 def _ _ init _ _ (self):  
-&emsp;className.total = className.total + 1  
+&emsp;ClassName.total = ClassName.total + 1  
   
 可讀、可寫、可刪除的屬性  
 def get(self):  
