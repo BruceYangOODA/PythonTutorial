@@ -79,7 +79,7 @@ value = property(__get,__set,__del)
 <<< type("測試".encode("unt-8"))  
 <class "bytes">
 
-%格式字串方法
+%格式字串方法  
 %s # 用str()顯示  
 %r # 用repr()顯示  
 
