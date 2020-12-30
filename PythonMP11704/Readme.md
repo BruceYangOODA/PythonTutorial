@@ -67,9 +67,9 @@ def del(self):
 value = property(__get,__set,__del)
 
 ### 第五章 字串與規則運算式
-> type("測試")  
+<<< type("測試")  
 <class "str">  
-> type("測試".encode("unt-8"))  
+<<< type("測試".encode("unt-8"))  
 <class "bytes">
 
 
